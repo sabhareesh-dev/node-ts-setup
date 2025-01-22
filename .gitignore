@@ -1,0 +1,30 @@
+# Node.js
+/node_modules/
+
+# TypeScript
+/dist/
+/build/
+/*.tsbuildinfo
+
+# ESLint cache
+/.eslintcache
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Prettier
+/.prettierignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.log

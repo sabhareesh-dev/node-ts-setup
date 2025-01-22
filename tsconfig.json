@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES2021", // You can keep ES2021 or use ES6
+        "module": "CommonJS", // Set module system to CommonJS
+        "moduleResolution": "Node", // Resolves modules like Node.js
+        "esModuleInterop": true, // Allows for interoperability with CommonJS
+        "outDir": "./dist", // Output directory for compiled files
+        "rootDir": "./src", // Root directory for TypeScript files
+        "strict": true, // Enable strict type checking
+        "resolveJsonModule": true, // Allow JSON imports
+        "allowSyntheticDefaultImports": true // Allow default imports from CommonJS
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
