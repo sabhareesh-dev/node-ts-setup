@@ -1,15 +1,10 @@
-export const preset = 'ts-jest';
-export const testEnvironment = 'node';
-export const rootDir = './src';
-export const moduleDirectories = ['node_modules', 'src'];
-export const testMatch = ['**/?(*.)+(spec|test).[tj]s?(x)'];
-export const collectCoverage = true;
-export const coverageDirectory = '../coverage';
-export const coverageProvider = 'v8';
-export const coveragePathIgnorePatterns = [
-    '/node_modules/',
-    '/tests/',
-    '/config/',
-    '/middleware/',
-    '/utils/',
-];
+module.exports = {
+    preset: 'ts-jest', // Support TypeScript with Jest
+    testEnvironment: 'node', // Required for SuperTest
+    rootDir: './src', // Start tests from the 'src' directory
+    moduleDirectories: ['node_modules', 'src'], // Resolve imports
+    testMatch: ['**/tests/**/*.(spec|test).[tj]s?(x)'], // Match test files in 'tests' folder
+    collectCoverage: true, // Enable code coverage
+    coverageDirectory: '../coverage', // Store coverage reports outside 'src'
+    coveragePathIgnorePatterns: ['/node_modules/', '/tests/'], // Exclude test files from coverage
+};
