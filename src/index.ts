@@ -4,6 +4,7 @@ import { logger } from './middleware/logger';
 import { errorHandler } from './middleware/errorHandler';
 import sampleRoutes from './routes/sampleRoutes';
 import { config } from './config/environment';
+import transportRouter from './routes/TransportRoutes';
 
 dotenv.config();
 
@@ -16,6 +17,9 @@ app.use(logger);
 
 // Routes
 app.use('/api/v1/sample', sampleRoutes);
+
+// transport
+app.use('/api/v1/transport-cost', transportRouter);
 
 // Error Handling Middleware
 app.use(errorHandler);
